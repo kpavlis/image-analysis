@@ -9,16 +9,16 @@
 
 The system processes a given dataset of 300 images and performs the following steps:
 
-1. 🧠 **Feature Extraction**
+1. 🧠 **Feature Extraction.**
    Images are transformed into tensors using PyTorch and normalized for use with a pre-trained ResNet50 model. The model's flattening layer is used to extract feature vectors for each image.
 
-3. 📏 **Distance Calculation**
+3. 📏 **Distance Calculation.**
    Euclidean distances are computed between all image pairs to quantify dissimilarity. These distances are then used to rank images by similarity.
 
-4. 🥇 **Initial Ranking**
+4. 🥇 **Initial Ranking.**
    For each image, the top L most similar images are selected to form a ranking list. This reduces computational cost and identifies nearest neighbors.
    
-6. 🔁 **Manifold Ranking** 
+6. 🔁 **Manifold Ranking.** 
    A hypergraph-based manifold ranking algorithm refines similarity scores through multiple iterations. This includes:
    - Rank normalization
    - Hypergraph construction
@@ -26,18 +26,18 @@ The system processes a given dataset of 300 images and performs the following st
    - Cartesian product of hyperedge elements
    - Final similarity matrix generation
 
-7. 🧪 **Evaluation** 
-   A subset of target images is randomly selected, and the top 4 matches are retrieved. The system calculates the average similarity score to evaluate retrieval accuracy.
-
-## 🎯 Purpose
-
-This project was created to explore how we can retrieve visually similar images from a dataset without using labeled data. By combining deep feature extraction with a hypergraph-based ranking algorithm, the system identifies and ranks images based on visual similarity. **It is developed solely for academic and research purposes.**
+7. 🧪 **Evaluation.** 
+   A subset of four target images is randomly selected from the dataset, and for each one, the top 4 visually similar matches are retrieved. The system then calculates the average similarity score across these results to evaluate retrieval accuracy.
 
 ## 🧠 Technologies Used
 
 - Python
 - Pytorch & torchvision (ResNet50)
 - NumPy
+
+## 🎯 Purpose
+
+This project was created to explore how we can retrieve visually similar images from a dataset without using labeled data. By combining deep feature extraction with a hypergraph-based ranking algorithm, the system identifies and ranks images based on visual similarity. **It is developed solely for academic and research purposes.**
 
 ## 🧰 Prerequisites
 
