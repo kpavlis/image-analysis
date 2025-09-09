@@ -1,4 +1,4 @@
-# 🖼️ Image Analysis via Hypergraph-Based Manifold Ranking
+# 🖼️ Image Analysis using Hypergraph-Based Manifold Ranking
 
 **The program implements an advanced image retrieval system based on the methodology described in the paper *"[Multimedia Retrieval Through Unsupervised Hypergraph-Based Manifold Ranking](https://ieeexplore.ieee.org/document/8733193)"*. The goal is to extract features from images and compute similarity scores to identify the most visually related images within a dataset.**
 
