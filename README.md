@@ -39,6 +39,13 @@ The system processes a given dataset of 300 images and performs the following st
 
 This project was created to explore how we can retrieve visually similar images from a dataset without using labeled data. By combining deep feature extraction with a hypergraph-based ranking algorithm, the system identifies and ranks images based on visual similarity. **It is developed solely for academic and research purposes.**
 
+## 📚 Technical Documentation
+
+A detailed technical overview of the project is available in a separate file.  
+It includes explanations of the code structure, key functions, and execution flow.
+
+👉🏼 [Documentation (in greek)](./Image_Analysis_Documentation_gr.pdf)
+
 ## 🧰 Prerequisites
 
 Before running the application, make sure your environment is properly configured.
