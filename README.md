@@ -50,9 +50,14 @@ Before running the application, make sure your environment is properly configure
 
 ## 🧪 How to Run
 
-1. Place your images in `data/coco_images/`
-2. Run `main.py`
-3. View the output rankings and similarity scores in the console
+1. **Clone the repository (or download and decompress the ZIP file)**
+   ```bash
+   git clone https://github.com/kpavlis/image-analysis.git
+   cd image-analysis
+   
+2. **Run** `main.py`
+
+3. **View the output rankings and similarity scores** in the console
 
 ## 🖥️ Sample Execution
 
