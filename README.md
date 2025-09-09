@@ -9,16 +9,16 @@
 
 The system processes a given dataset of 300 images and performs the following steps:
 
-1. 🧠 **Feature Extraction** 
+1. 🧠 **Feature Extraction**
    Images are transformed into tensors using PyTorch and normalized for use with a pre-trained ResNet50 model. The model's flattening layer is used to extract feature vectors for each image.
 
-2. 📏 **Distance Calculation**
+3. 📏 **Distance Calculation**
    Euclidean distances are computed between all image pairs to quantify dissimilarity. These distances are then used to rank images by similarity.
 
-3. 🥇 **Initial Ranking**  
+4. 🥇 **Initial Ranking**
    For each image, the top L most similar images are selected to form a ranking list. This reduces computational cost and identifies nearest neighbors.
-
-4. 🔁 **Manifold Ranking** 
+   
+6. 🔁 **Manifold Ranking** 
    A hypergraph-based manifold ranking algorithm refines similarity scores through multiple iterations. This includes:
    - Rank normalization
    - Hypergraph construction
@@ -26,7 +26,7 @@ The system processes a given dataset of 300 images and performs the following st
    - Cartesian product of hyperedge elements
    - Final similarity matrix generation
 
-5. 🧪 **Evaluation** 
+7. 🧪 **Evaluation** 
    A subset of target images is randomly selected, and the top 4 matches are retrieved. The system calculates the average similarity score to evaluate retrieval accuracy.
 
 ## 🎯 Purpose
@@ -39,7 +39,7 @@ This project was created to explore how we can retrieve visually similar images 
 - Pytorch & torchvision (ResNet50)
 - NumPy
 
-## 🧰 Prerequisites & Setup
+## 🧰 Prerequisites
 
 Before running the application, make sure your environment is properly configured.
 
