@@ -16,7 +16,7 @@ transform = transforms.Compose([
 ])
 
 
-image_folder = datasets.ImageFolder(root='data/__your_folder_with_pictures__', transform=transform)
+image_folder = datasets.ImageFolder(root='your_images_folder', transform=transform)
 filenames = [image_folder.imgs[i][0] for i in range(len(image_folder))]# List of file paths
 
 limited_image_folder = torch.utils.data.Subset(image_folder, range(300))
