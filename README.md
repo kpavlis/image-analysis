@@ -58,12 +58,18 @@ Before running the application, make sure your environment is properly configure
    ```bash
    git clone https://github.com/kpavlis/image-analysis.git
    cd image-analysis
-   
-2. **Run** `main.py`
 
-3. **View the output rankings and similarity scores** in the console
+2. **Define** the images folder at the line 19:
+   ```python
+   image_folder = datasets.ImageFolder(root='your_images_folder', transform=transform)
 
-## 🖥️ Sample Execution
+3. **Confirm** that you have installed the required libraries
+
+4. **Run** `main.py`
+
+5. **View the output rankings and similarity scores** in the console
+
+## 🛠️ Running a Demo
 
 Below is a manually created visualization that demonstrates how the system retrieves similar images from a dataset.
 
