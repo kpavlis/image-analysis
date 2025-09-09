@@ -1,6 +1,9 @@
 # 🖼️ Image Analysis via Hypergraph-Based Manifold Ranking
 
-This project implements an advanced image retrieval system based on the methodology described in the paper *"Multimedia Retrieval through Unsupervised Hypergraph-based Manifold Ranking"*. The goal is to extract features from images and compute similarity scores to identify the most visually related images within a dataset.
+This program implements an advanced image retrieval system based on the methodology described in the paper *"Multimedia Retrieval through Unsupervised Hypergraph-based Manifold Ranking"*. The goal is to extract features from images and compute similarity scores to identify the most visually related images within a dataset.
+
+> ℹ️ This project is not open source and does not grant any usage rights.
+> For usage terms and legal information, see [Code Ownership & Usage Terms](#-code-ownership--usage-terms).
 
 ## 🚀 Overview
 
@@ -75,4 +78,21 @@ Higher scores indicate better retrieval performance.
 
 - The ranking process is repeated 7 times to refine similarity scores.
 - The final output includes both numerical scores and visual comparisons.
+
+# 🔒 Code Ownership & Usage Terms
+
+This project was created and maintained by:
+
+- Konstantinos Pavlis (@kpavlis)
+- Theofanis Tzoumakas (@theofanistzoumakas)
+- Michael-Panagiotis Kapetanios (@KapetaniosMP)
+
+🚫 **Unauthorized use is strictly prohibited.**  
+No part of this codebase may be copied, reproduced, modified, distributed, or used in any form without **explicit written permission** from the owners.
+
+Any attempt to use, republish, or incorporate this code into other projects—whether commercial or non-commercial—without prior consent may result in legal action.
+
+For licensing inquiries or collaboration requests, please contact via email: konstantinos1125 _at_ gmail.com .
+
+© 2025 Konstantinos Pavlis, Theofanis Tzoumakas, Michael-Panagiotis Kapetanios. All rights reserved.
 
