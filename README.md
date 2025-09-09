@@ -1,13 +1,13 @@
 # 🖼️ Image Analysis via Hypergraph-Based Manifold Ranking
 
-This program implements an advanced image retrieval system based on the methodology described in the paper *"Multimedia Retrieval through Unsupervised Hypergraph-based Manifold Ranking"*. The goal is to extract features from images and compute similarity scores to identify the most visually related images within a dataset.
+The program implements an advanced image retrieval system based on the methodology described in the paper *"[Multimedia Retrieval Through Unsupervised Hypergraph-Based Manifold Ranking](https://ieeexplore.ieee.org/document/8733193)"*. The goal is to extract features from images and compute similarity scores to identify the most visually related images within a dataset.
 
 > ℹ️ This project is not open source and does not grant any usage rights.
 > For usage terms and legal information, see [Code Ownership & Usage Terms](#-code-ownership--usage-terms).
 
 ## 🚀 Overview
 
-The system processes a given dataset of images and performs the following steps:
+The system processes a given dataset of 300 images and performs the following steps:
 
 1. 🧠 **Feature Extraction** 
    Images are transformed into tensors using PyTorch and normalized for use with a pre-trained ResNet50 model. The model's flattening layer is used to extract feature vectors for each image.
@@ -29,55 +29,49 @@ The system processes a given dataset of images and performs the following steps:
 5. 🧪 **Evaluation** 
    A subset of target images is randomly selected, and the top 4 matches are retrieved. The system calculates the average similarity score to evaluate retrieval accuracy.
 
-## 📊 Dataset
-
-The dataset includes 300 images from various categories:
-- Egyptian pyramids
-- Cats
-- Dogs
-- People in activities
-- Bicycles
-- Vehicles
-
-## 📷 Output
-
-The application outputs visual comparisons between target images and their top matches. Each result includes:
-- Target image
-- Top 4 most similar images
-- Similarity scores
-
-Example categories retrieved include:
-- Pyramids with different angles and environments
-- Snowboarding scenes matched with similar winter sports images
-
 ## 🧠 Technologies Used
 
-- Python & PyTorch
-- torchvision (ResNet50)
+- Python
+- Pytorch & torchvision (ResNet50)
 - NumPy
-- COCO image dataset
 
-## 📈 Accuracy Metric
+## 🧰 Prerequisites & Setup
 
-The system computes the average similarity score across all target images using the formula:
+Before running the application, make sure your environment is properly configured.
 
-**Mean Similarity Score** =  
-$$\frac{1}{n} \sum_{i=1}^{n} \text{Similarity}(i)$$  
-Where *n* is the number of top matches per target image.
+### Python Version
 
-Higher scores indicate better retrieval performance.
+- Python **3.9** is recommended
 
+### Required Libraries
+
+- torch (**2.8.0**)
+- torchvision (**0.23.0**)
 
 ## 🧪 How to Run
 
 1. Place your images in `data/coco_images/`
-2. Run `main_prerelease.py`
-3. View the output rankings and similarity scores in the console and image collage
+2. Run `main.py`
+3. View the output rankings and similarity scores in the console
 
-## 📌 Notes
+## 🖥️ Sample Execution
 
-- The ranking process is repeated 7 times to refine similarity scores.
-- The final output includes both numerical scores and visual comparisons.
+Below is a manually created visualization that demonstrates how the system retrieves similar images from a dataset.
+
+Each row shows:
+- 🎯 A target image on the left
+- 🥇 The top 4 most similar images retrieved by the system on the right
+
+
+<img width="2050" height="1116" alt="Ima_Ana_1" src="https://github.com/user-attachments/assets/2bc70966-69cf-489c-ab9c-f21ea4b79af3" />
+
+
+### 📌 Notes
+
+The above collage was manually created to illustrate the retrieval results.  
+The application itself does **not generate graphical output** — it returns similarity scores and image rankings via the console.
+
+> 📁 **This run was performed using a dataset of 300 images**, covering various categories such as pyramids, animals, people, and winter sports.
 
 # 🔒 Code Ownership & Usage Terms
 
