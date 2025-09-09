@@ -59,7 +59,7 @@ Before running the application, make sure your environment is properly configure
    git clone https://github.com/kpavlis/image-analysis.git
    cd image-analysis
 
-2. **Define** the images folder at the line 19:
+2. **Specify** the path to your image dataset (containing 300 `.jpg` images from at least 5 different categories) by editing line 19 in `main.py`:
    ```python
    image_folder = datasets.ImageFolder(root='your_images_folder', transform=transform)
 
