@@ -52,12 +52,12 @@ Before running the application, make sure your environment is properly configure
 
 ### Python Version
 
-- Python **3.9** is recommended
+- Python **3.9+** is recommended
 
 ### Required Libraries
 
-- torch (**2.8.0**)
-- torchvision (**0.23.0**)
+- torch (version **2.8.x**)
+- torchvision (version **0.23.x**)
 
 ## 🧪 How to Run
 
