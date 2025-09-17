@@ -29,7 +29,7 @@ The system processes a given dataset of 300 images and performs the following st
 7. 🧪 **Evaluation.** 
    A subset of four target images is randomly selected from the dataset, and for each one, the top 4 visually similar matches are retrieved. The system then calculates the average similarity score across these results to evaluate retrieval accuracy.
 
-> 📌 The **`resources`** folder contains supporting material such as images and documents.
+> 📌 The **`resources`** folder contains supporting material such as images and PDFs.
 
 ## 🧠 Technologies Used
 
