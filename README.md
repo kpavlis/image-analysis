@@ -29,6 +29,8 @@ The system processes a given dataset of 300 images and performs the following st
 7. 🧪 **Evaluation.** 
    A subset of four target images is randomly selected from the dataset, and for each one, the top 4 visually similar matches are retrieved. The system then calculates the average similarity score across these results to evaluate retrieval accuracy.
 
+> 📌 The `resources` folder contains supporting material such as images and documentation.
+
 ## 🧠 Technologies Used
 
 - Python
@@ -44,7 +46,7 @@ This project was created to explore how we can retrieve visually similar images 
 A detailed technical overview of the project is available in a separate file.  
 It includes explanations of the code structure, key functions, and execution flow.
 
-👉🏼 [Documentation (in greek)](./Image_Analysis_Documentation_gr.pdf)
+👉🏼 [Documentation (in greek)](resources/docs/Image_Analysis_Documentation_gr.pdf)
 
 ## 🧰 Prerequisites
 
@@ -85,7 +87,7 @@ Each row shows:
 - 🥇 The top 4 most similar images retrieved by the system on the right
 
 
-<img width="2050" height="1116" alt="Ima_Ana_1" src="https://github.com/user-attachments/assets/2bc70966-69cf-489c-ab9c-f21ea4b79af3" />
+<img width="2050" height="1116" alt="Ima_Ana_1" src="resources/images/execution_sample.png" />
 
 
 ### 📌 Notes
